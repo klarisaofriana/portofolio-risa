@@ -1,5 +1,12 @@
 .portfolio__container {
     grid-template-columns: repeat(3, 1fr);
+    position: relative;
+    z-index: 1;
+}
+
+.portfolio.section {
+    padding-top: 80px;
+    /* Sesuaikan dengan tinggi navbar */
 }
 
 .portfolio__item {
@@ -46,10 +53,12 @@
     position: fixed;
     inset: 0;
     background-color: hsla(0, 0%, 0%, 0.7);
-    z-index: 1000;
     display: grid;
     place-items: center;
     padding: 15px;
+
+    z-index: 1000;
+    /* Pastikan lebih rendah dari navbar */
 }
 
 .portfolio__modal-content {

@@ -78,6 +78,8 @@
 
     .nav {
         position: fixed;
+        z-index: 2000;
+        /* Nilai besar untuk memastikan di atas elemen lain */
         inset-block: 0;
         right: 30px;
         display: flex;
